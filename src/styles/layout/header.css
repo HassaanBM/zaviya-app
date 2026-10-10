@@ -1,0 +1,12 @@
+/* Site header, navigation, mobile drawer */
+.hd{position:sticky;top:0;z-index:50;background:rgba(251,247,238,.94);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}.hd.is-s{border-color:var(--line);box-shadow:0 6px 20px -14px rgba(0,0,0,.4)}
+.hd__in{display:flex;align-items:center;justify-content:space-between;height:var(--hd)}
+.hd__logo{display:inline-flex;text-decoration:none;min-height:44px;align-items:center}
+.wm{font:600 1.55rem/1 var(--serif);display:inline-flex;align-items:baseline;color:var(--forest)}.wm__z{color:var(--ember);font-size:1.25em;font-style:italic;margin-right:.02em}.wm__t b{font-weight:600;font-style:italic}.wm--lt{color:#fff}.wm--lt .wm__z{color:var(--gold)}
+.hd__nav{display:none}.hd__tools{display:flex;align-items:center;gap:2px}.hd__order{display:none}.hd__acct{display:none}
+.badge{position:absolute;top:2px;right:0;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--ember);color:#fff;font:700 .72rem/20px var(--sans);text-align:center}
+.hd__burger .i-close{display:none}.hd__burger[aria-expanded=true] .i-open{display:none}.hd__burger[aria-expanded=true] .i-close{display:block}
+.drawer{position:absolute;left:0;right:0;top:100%;background:var(--forest);color:#fff;max-height:calc(100svh - var(--hd));overflow:auto}.drawer__in{padding:12px var(--gut) 28px}
+.drawer nav a{display:block;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14);font:600 1.5rem/1.2 var(--serif);text-decoration:none}.drawer nav a[aria-current=page]{color:var(--gold)}
+.drawer__meta{margin:20px 0 0;color:#E4DDC9}.drawer__meta a{color:#fff}
+@media(min-width:1024px){:root{--hd:76px;--gut:32px}.hd__nav{display:flex;gap:6px}.hd__nav a{padding:10px 14px;border-radius:99px;text-decoration:none;font-weight:600;font-size:.95rem}.hd__nav a:hover{background:rgba(0,0,0,.06)}.hd__nav a[aria-current=page]{box-shadow:inset 0 -3px 0 var(--ember);border-radius:0}.hd__order,.hd__acct{display:inline-grid}.hd__order{display:inline-flex;margin-left:8px}.hd__burger{display:none}.drawer{display:none!important}}

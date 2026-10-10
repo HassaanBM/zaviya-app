@@ -1,0 +1,3 @@
+/* Map, facts, prose, tables, empty and error states */
+.facts{display:grid;gap:12px;margin:1rem 0}.facts li{display:flex;gap:12px;align-items:flex-start}.facts .ico{margin-top:3px;color:var(--ember)}.facts a{text-decoration:none;font-weight:600}.facts a:hover{text-decoration:underline}
+.map{border-radius:var(--r);overflow:hidden;background:var(--paper);border:1px solid var(--line);min-height:300px;display:grid}.map iframe{width:100%;height:360px;border:0}.map__ph{display:grid;gap:10px;place-items:center;text-align:center;padding:36px 20px}.map__ph .ico{width:40px;height:40px;color:var(--ember)}

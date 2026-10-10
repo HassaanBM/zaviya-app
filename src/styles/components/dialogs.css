@@ -1,0 +1,12 @@
+/* Cart drawer, search dialog, toast, mobile order bar */
+.scrim{position:fixed;inset:0;background:rgba(10,24,18,.55);z-index:90;opacity:0;transition:opacity .3s}.scrim.on{opacity:1}
+.cp{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--cream);z-index:100;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .35s var(--ease);box-shadow:-20px 0 40px -20px rgba(0,0,0,.4)}.cp.on{transform:none}
+.cp__head{display:flex;align-items:center;justify-content:space-between;padding:12px 18px 12px 22px;border-bottom:1px solid var(--line)}.cp__head h2{margin:0;font-size:1.4rem}
+.cp__body{flex:1;overflow:auto;padding:0 22px}.cp__foot{padding:16px 22px 22px;border-top:1px solid var(--line);background:#fff}.cp__sum{display:flex;justify-content:space-between;font-size:1.15rem;margin:0 0 6px}.cp__btns{display:grid;gap:10px;margin-top:12px}
+.srch{position:fixed;inset:0;z-index:100;background:rgba(251,247,238,.98);overflow:auto;opacity:0;transition:opacity .25s}.srch.on{opacity:1}.srch__in{max-width:760px;margin:0 auto;padding:16px var(--gut) 48px}
+.srch__bar{position:relative;display:flex;align-items:center;gap:8px;margin-bottom:18px}.srch__bar>.ico{position:absolute;left:16px;top:50%;transform:translateY(-50%);pointer-events:none}.srch__bar input{flex:1}
+.sres li{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}.sres a{text-decoration:none;font-weight:700}.sres a:hover{text-decoration:underline}.sres small{display:block;color:var(--mute);font-weight:500}
+.toast{position:fixed;left:50%;bottom:92px;transform:translate(-50%,20px);background:var(--forest);color:#fff;padding:12px 20px;border-radius:99px;z-index:120;font-weight:700;opacity:0;transition:opacity .25s,transform .25s;max-width:calc(100% - 32px);text-align:center}.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(min-width:1024px){.toast{bottom:32px}}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(to top,var(--cream) 70%,transparent)}@media(min-width:1024px){.mbar{display:none!important}}
+.ns{background:#FFF3D6;padding:12px;text-align:center;margin:0}

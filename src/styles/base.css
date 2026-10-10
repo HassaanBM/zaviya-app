@@ -1,0 +1,25 @@
+/* Reset, typography, focus and utilities */
+[hidden]{display:none!important}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--hd) + 56px)}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis-stopped{overflow:hidden}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1rem/1.6 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock,html.lock{overflow:hidden}
+img,svg{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0 0 .5em;letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:clamp(2.3rem,7.5vw,4.6rem)}h2{font-size:clamp(1.8rem,4.6vw,3rem)}h3{font-size:1.2rem}
+h1 em,h2 em{font-style:italic;font-weight:500}
+p{margin:0 0 1em}ul,ol{margin:0;padding:0;list-style:none}
+a{color:inherit;text-underline-offset:3px}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid #0B5FD8;outline-offset:3px;border-radius:4px}
+.hero :focus-visible,.story :focus-visible,.resv :focus-visible,.ft :focus-visible,.pre :focus-visible,.cp :focus-visible.on-d{outline-color:var(--gold)}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;background:var(--forest);color:#fff;padding:12px 18px;border-radius:8px;z-index:200}.skip:focus{top:12px}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.muted{color:var(--mute);font-size:.9rem}
+.eyebrow{font:700 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ember);margin:0 0 .9rem}.eyebrow--lt{color:var(--gold)}
+.lead{font-size:1.15rem;color:var(--mute);max-width:56ch}
+.h2{font-size:1.6rem;margin-top:2rem}
+.ico{width:1.25em;height:1.25em;fill:currentColor;flex:none}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}.w>span{display:inline-block;will-change:transform}

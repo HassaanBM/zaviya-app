@@ -1,0 +1,37 @@
+/* Photos from the restaurant's own gallery on zaviyagrill.com. Alt text follows the source captions. */
+const S = "https://static.spotapps.co/spots/";
+const I = (h, alt) => ({ src: S + h, alt });
+export const IMG = {
+  hero: I("6f/439927ac174ba8ad2aa7b81df47544", "Assorted dishes on the table at Zaviya Grill, top view"),
+  jalapeno: I("8f/96f287a1a640b09c1e12801dad711b", "Marinated deep fried chicken with jalapenos, served with rice and a drink"),
+  table2: I("08/43081c408e4d078abb240357724ad8", "Various food on the table, top view"),
+  wood: I("c6/af839247864814a5106162e1d9c296", "A variety of dishes and drinks on a wooden table"),
+  legnaan: I("88/47ad4019aa46749799e46faaf9e490", "Chicken leg and naan bread"),
+  tikka: I("ed/e7405c406b4b9e9cfaa64c661dc618", "Chicken Tikka Masala in a creamy tomato sauce"),
+  tikka2: I("c6/6735e4b77d48ccbc23b0c604ea92db", "Chicken Tikka Masala"),
+  leg: I("bf/4ed532cb3f461488e068a63b426124", "Grilled chicken leg marinated in tandoori masala"),
+  breast: I("8f/514259041a4cb5bc2894bbfdfc5048", "Chicken breast with tandoori masala"),
+  chseekh: I("7a/2707de5403497bb0d196ca19f1f1c6", "Skewered minced chicken with onions, herbs and spices"),
+  bseekh: I("d1/86571212844740bc2746f82c3cd05c", "Charcoal grilled skewers of beef"),
+  bihari: I("87/e8efa5fbb14962af75c3ecaf87915a", "Skewered marinated beef slices with onions, herbs and spices"),
+  malai: I("64/939608b3654756925435a7f603100e", "Chicken Malai Boti"),
+  karahi: I("f3/969b74a6ae479fa9f97ebc7049ed91", "Chicken Karahi in a tomato butter cream sauce"),
+  goatkarahi: I("f8/56d48bb85e46918da475a8dca6fb8a", "Goat Karahi with ginger, garlic, spices and tomato and onion gravy"),
+  haleem: I("dc/8f965db9d846748ee64790e9a209d7", "Haleem, a spicy porridge of grains and meat"),
+  tawa: I("cc/d802d41719448a9937b91fd4ccea50", "Tawa Chicken"),
+  c65: I("35/9ff01c160044b0b53f1c91e2fa41f6", "Chicken 65"),
+  friedrice: I("3b/e2dbbf33034482bb1a3530be6dafb0", "Chicken Fried Rice"),
+  gulab: I("9d/ba14ac8b244c2fa0dc28e303b82e0f", "Gulab jaman"),
+  halwa: I("ab/9b0acb384b46269dbf2d937b3aff01", "Sooji halwa"),
+  special: I("3d/41555ed2024f05b71038e5cad2e416", "Special grill platter, close up"),
+  mix: I("cb/cf1b19ae3f481fb54e6d4e6328430d", "Mix grill platter, top view"),
+  qorma: I("ba/2a5113e9224582b2589cf35de3191c", "Chicken korma in a skillet, top view"),
+  brain: I("74/65318d4317483eb8dd8613001754bc", "Beef brain masala, top view"),
+  cotton: I("12/f263358f524318bc54b34cadd455e9", "Cotton candy shake with decorations"),
+  burger: I("ec/99b219c28c4a94838c62a351857383", "Beef kebab burger with fries"),
+  about1: { src: "https://static.spotapps.co/website_images/ab_websites/67749_website/about/aboutuspg_slide01.jpg", alt: "Chicken tikka leg and plain naan" },
+  about2: { src: "https://static.spotapps.co/website_images/ab_websites/67749_website/about/aboutuspg_slide02.jpg", alt: "Gajar halwa and gulab jamun" },
+  about3: { src: "https://static.spotapps.co/website_images/ab_websites/67749_website/about/aboutuspg_slide03.jpg", alt: "Goat haleem" },
+  og: { src: "https://static.spotapps.co/website_images/ab_websites/67749_website/about/aboutuspg_left.jpg", alt: "Chicken tikka leg and plain naan" },
+};
+export const GALLERY = ["hero","jalapeno","table2","wood","legnaan","tikka","tikka2","leg","breast","chseekh","bseekh","bihari","malai","karahi","goatkarahi","haleem","tawa","c65","friedrice","gulab","halwa","special","mix","qorma","brain","cotton","burger"];

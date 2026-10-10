@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------
+# Zaviya Grill website
+# NOTE: preview/ is deliberately NOT ignored. It is the GitHub Pages
+# build (relative links), so it must be committed.
+# ---------------------------------------------------------------
+
+# Dependencies (restored with `npm install`)
+node_modules/
+.pnp
+.pnp.js
+
+# Production build output (regenerated with `npm run build`)
+dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test output and caches (Playwright, coverage, tooling)
+test-results/
+playwright-report/
+playwright/.cache/
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
+.eslintcache
+*.tsbuildinfo
+
+# Package manager extras
+.npm
+.yarn/
+.pnpm-store/
+*.tgz
+
+# Editor and IDE files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files and archives
+tmp/
+temp/
+*.tmp
+*.bak
+*.zip

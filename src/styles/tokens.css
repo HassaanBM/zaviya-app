@@ -1,0 +1,5 @@
+/* Design tokens: fonts, colors, spacing, radius, layout, motion easing. Change the brand here. */
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/fraunces.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/manrope.woff2) format("woff2")}
+:root{--forest:#0F2E24;--forest2:#17402F;--ember:#B83F14;--ember-d:#9A3210;--gold:#F2B544;--cream:#FBF7EE;--paper:#F1E9D8;--ink:#1C1B18;--mute:#5B574D;--line:#DDD3BE;--white:#fff;--r:14px;--hd:64px;--wrap:1240px;--gut:20px;--serif:"Fraunces",Georgia,serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--ease:cubic-bezier(.22,.8,.24,1)}
+[hidden]{display:none!important}

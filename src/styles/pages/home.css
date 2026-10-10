@@ -1,0 +1,12 @@
+/* Homepage sections after the hero */
+.story{background:var(--forest);color:#fff;padding:64px 0;clip-path:polygon(0 24px,100% 0,100% calc(100% - 24px),0 100%);margin:-12px 0}.story h2{color:#fff}.story__in{display:grid;gap:32px;align-items:center}.story p{color:#E4DDC9}.story__img{overflow:hidden;border-radius:var(--r)}.story__img .ph{border-radius:0}
+@media(min-width:900px){.story{padding:110px 0}.story__in{grid-template-columns:.9fr 1.1fr;gap:72px}}
+.duo{display:grid;gap:20px}@media(min-width:768px){.duo{grid-template-columns:1fr 1fr}}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}.panel--plain{background:#fff}.panel__i{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--paper);margin-bottom:14px}.panel__i .ico{width:26px;height:26px;color:var(--ember)}.panel h2,.panel h3{font-size:1.5rem}
+.resv{background:var(--ember);color:#fff;padding:56px 0}.resv h2{color:#fff}.resv .eyebrow{color:#fff}.resv p{color:#fff}.resv__in{display:grid;gap:24px;align-items:center}.resv__cta{display:flex;flex-direction:column;gap:10px;align-items:flex-start}@media(min-width:768px){.resv__cta{align-items:flex-end}}
+@media(min-width:768px){.resv__in{grid-template-columns:1.4fr 1fr}}
+.q{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}.q figure{margin:0}.q__i{color:var(--ember);width:32px;height:32px;margin-bottom:8px}.q blockquote{margin:0 0 12px;font:500 1.2rem/1.45 var(--serif)}.q figcaption{color:var(--mute);font-size:.9rem}
+.invite{text-align:center;padding:64px 0 72px}.invite__in{max-width:640px}.invite .row-btns{justify-content:center}
+
+.sec--intro{padding-top:72px}.pts{display:grid;gap:18px}.pts li{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}.pts h3{margin:0 0 .15em;font-size:1.15rem}.pts p{margin:0;color:var(--mute)}.pts__i{display:grid;place-items:center;flex:none;width:48px;height:48px;border-radius:50%;background:var(--paper);color:var(--ember)}.pts__i .ico{width:24px;height:24px}
+.strip{display:grid;gap:10px;grid-template-columns:repeat(3,1fr)}@media(min-width:768px){.strip{grid-template-columns:repeat(6,1fr);gap:14px}}.strip .ph{border-radius:12px}

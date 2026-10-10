@@ -1,0 +1,10 @@
+/* Section rhythm, grids, splits */
+.sec{padding:64px 0}.sec--tight{padding:28px 0 72px}.sec--paper{background:var(--paper)}
+.sec__head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:28px}.sec__head h2{margin:0}
+.more{margin-top:28px;text-align:center}
+.split{display:grid;gap:32px;align-items:start}.split__t h2{margin-bottom:.4em}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr;gap:56px;align-items:center}.sec--tight .split{align-items:start}}
+.row-btns{display:flex;flex-wrap:wrap;gap:12px;margin:1.2rem 0}
+.grid{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:640px){.grid--3,.grid--2{grid-template-columns:repeat(2,1fr)}}@media(min-width:1024px){.grid--3{grid-template-columns:repeat(3,1fr)}}
+.check li{display:flex;gap:10px;align-items:center;padding:4px 0;font-weight:600}.check .ico{color:var(--ember)}.story .check .ico{color:var(--gold)}

@@ -1,0 +1,26 @@
+{
+  "name": "zaviya-grill-website",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Zaviya Grill, North Austin. Multi-page static website with menu, cart and GSAP motion.",
+  "scripts": {
+    "build": "node scripts/build.mjs dist prod",
+    "build:preview": "node scripts/build.mjs preview preview",
+    "dev": "npm run build && node scripts/serve.mjs dist 8080",
+    "test": "npm run build && npm run build:preview && node tests/static.mjs && node tests/e2e.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/manrope": "^5.2.0",
+    "@phosphor-icons/core": "^2.1.1",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "simple-icons": "^16.34.0"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "esbuild": "^0.28.2",
+    "playwright-core": "^1.64.0"
+  }
+}

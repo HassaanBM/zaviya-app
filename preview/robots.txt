@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /order-confirmation/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /forgot-password/
+Disallow: /account/
+Disallow: /error/
+Sitemap: https://zaviyagrill.com/sitemap.xml

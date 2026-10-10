@@ -1,0 +1,8 @@
+/* Preloader, page curtain, reduced motion */
+.pre{display:none;position:fixed;inset:0;z-index:300;background:var(--forest);color:#fff;place-items:center;clip-path:inset(0 0 0 0)}.is-intro .pre{display:grid}
+.pre__in{text-align:center;padding:0 20px}.pre__mark{display:inline-flex;align-items:baseline;font:600 clamp(2.8rem,12vw,6rem)/1 var(--serif)}.pre__z{color:var(--gold);font-style:italic;display:inline-block;overflow:hidden;padding:0 .06em .12em 0}.pre__z span{display:inline-block}
+.pre__rest{display:inline-flex}.pre__c{display:inline-block;overflow:hidden;padding-bottom:.14em}.pre__c i{display:inline-block;font-style:normal}.pre__c--g i{font-style:italic}.pre__sp{width:.28em}
+.pre__tag{margin:18px 0 0;font-size:.9rem;letter-spacing:.16em;text-transform:uppercase;color:#D9D1BB}.pre__line{display:block;height:2px;width:min(240px,60vw);margin:22px auto 0;background:var(--gold);transform-origin:left;transform:scaleX(0)}
+.tr{position:fixed;inset:0;z-index:250;background:var(--forest);transform:translateY(100%);pointer-events:none;visibility:hidden}
+.is-tr .tr{transform:none;visibility:visible;animation:trfail .01s 2.5s forwards}@keyframes trfail{to{visibility:hidden}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.pre,.tr{display:none!important}.dc:hover{transform:none}}

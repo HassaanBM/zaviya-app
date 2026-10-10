@@ -1,0 +1,13 @@
+/* Buttons, links, icon buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:.7em 1.5em;border-radius:999px;border:2px solid var(--ember);background:var(--ember);color:#fff;font-weight:700;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,transform .2s,border-color .2s;line-height:1.1}
+.btn:hover{background:var(--ember-d);border-color:var(--ember-d)}.btn:active{transform:translateY(1px)}
+.btn--sm{min-height:44px;padding:.5em 1.1em;font-size:.92rem}.btn--lg{min-height:56px;padding:.8em 1.9em;font-size:1.05rem}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--ink)}.btn--ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn--line{background:transparent;color:#fff;border-color:rgba(255,255,255,.75)}.btn--line:hover{background:#fff;color:var(--forest);border-color:#fff}
+.btn--gold{background:var(--gold);border-color:var(--gold);color:var(--forest)}.btn--gold:hover{background:#fff;border-color:#fff;color:var(--forest)}
+.btn--block{width:100%;justify-content:space-between}.btn[disabled]{opacity:.55;cursor:not-allowed}
+.lnk{display:inline-flex;align-items:center;gap:.4em;font-weight:700;color:var(--ember);text-decoration:none;min-height:44px}.lnk:hover{text-decoration:underline}.lnk--lt{color:#fff}
+.ib{display:inline-grid;place-items:center;width:44px;height:44px;border:0;background:transparent;border-radius:50%;cursor:pointer;position:relative;text-decoration:none}.ib:hover{background:rgba(0,0,0,.07)}
+.ib .ico{width:24px;height:24px}
+
+.ib--ring{border:2px solid rgba(255,255,255,.55);color:#fff;width:48px;height:48px}.ib--ring:hover{background:#fff;color:var(--forest)}

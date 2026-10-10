@@ -1,0 +1,7 @@
+/* Footer */
+.ft{background:var(--forest);color:#E4DDC9;padding:56px 0 24px;margin-top:0}.ft a{color:#fff}.ft h2{font:800 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.9em}
+.ft__top{display:grid;gap:36px}.ft__cols{display:grid;gap:28px;grid-template-columns:1fr 1fr}@media(min-width:1024px){.ft__top{grid-template-columns:1fr 2.4fr}.ft__cols{grid-template-columns:repeat(4,1fr)}}
+.ft li{margin:.3em 0}.ft address{font-style:normal;margin-bottom:.6em}.ft__brand p{margin:12px 0}
+.soc{display:flex;gap:6px}.soc a{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35)}.soc a:hover{background:#fff;color:var(--forest)}.soc .ico{width:20px;height:20px}
+.ft__bot{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;border-top:1px solid rgba(255,255,255,.16);margin-top:36px;padding-top:20px;font-size:.9rem}.ft__bot ul{display:flex;flex-wrap:wrap;gap:4px 20px}.ft__bot p{margin:0}
+@media(max-width:1023px){body:has(.mbar:not([hidden])) .ft{padding-bottom:96px}}
