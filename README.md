@@ -10,6 +10,7 @@ The cart works in the browser only. It does not take payments.
 
 Open the live preview: **add your GitHub Pages link here**
 
+<!--
 ## Run it on your computer
 
 1. Install Node.js.
@@ -30,6 +31,7 @@ Open the live preview: **add your GitHub Pages link here**
 - `src/` holds the source code.
 - `preview/` holds the GitHub Pages build.
 - `dist/` holds the server build. Git does not track it.
+-->
 
 ## Visit
 
