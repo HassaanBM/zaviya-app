@@ -68,6 +68,17 @@ ${sechead("Reviews", "rv-h", "What guests say", A(R.links.yelp, `More on Yelp ${
 <section class="sec sec--paper" aria-labelledby="loc-h"><div class="wrap split split--map">
 <div class="split__t"><p class="eyebrow" data-reveal>Find us</p><h2 id="loc-h" data-split>Visit Zaviya Grill</h2>${factList()}
 <p class="row-btns" data-reveal>${A(R.directions, "Get Directions", "btn", true)}${A(U.contact, "Contact us", "btn btn--ghost")}</p></div>
-<div data-reveal>${mapBlock()}</div></div></section>`,
+<div data-reveal>${mapBlock()}</div></div></section>
+
+<aside class="halal-badge" aria-label="100% Zabiha Halal" aria-describedby="halal-badge-tip" tabindex="0">
+<span class="halal-badge__shape-wrap" aria-hidden="true">
+<svg class="halal-badge__shape" data-halal-shape aria-hidden="true" viewBox="0 0 100 100" focusable="false">
+<path class="halal-badge__outer" d="M50 3 L58.116 11.116 Q63.766 16.766 71.756 16.766 L83.234 16.766 L83.234 28.244 Q83.234 36.234 88.884 41.884 L97 50 L88.884 58.116 Q83.234 63.766 83.234 71.756 L83.234 83.234 L71.756 83.234 Q63.766 83.234 58.116 88.884 L50 97 L41.884 88.884 Q36.234 83.234 28.244 83.234 L16.766 83.234 L16.766 71.756 Q16.766 63.766 11.116 58.116 L3 50 L11.116 41.884 Q16.766 36.234 16.766 28.244 L16.766 16.766 L28.244 16.766 Q36.234 16.766 41.884 11.116 Z"/>
+<path class="halal-badge__inner" transform="translate(50 50) scale(.9) translate(-50 -50)" d="M50 3 L58.116 11.116 Q63.766 16.766 71.756 16.766 L83.234 16.766 L83.234 28.244 Q83.234 36.234 88.884 41.884 L97 50 L88.884 58.116 Q83.234 63.766 83.234 71.756 L83.234 83.234 L71.756 83.234 Q63.766 83.234 58.116 88.884 L50 97 L41.884 88.884 Q36.234 83.234 28.244 83.234 L16.766 83.234 L16.766 71.756 Q16.766 63.766 11.116 58.116 L3 50 L11.116 41.884 Q16.766 36.234 16.766 28.244 L16.766 16.766 L28.244 16.766 Q36.234 16.766 41.884 11.116 Z"/>
+</svg>
+</span>
+<span class="halal-badge__copy"><span class="halal-badge__percent">- 100% -</span><span>Zabiha</span><span>Halal</span></span>
+<span class="halal-badge__tip" id="halal-badge-tip" role="tooltip">Zaviya Grill serves 100% halal food.</span>
+</aside>`,
   });
 }

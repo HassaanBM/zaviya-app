@@ -45,6 +45,27 @@ for (const [w, h] of [[390, 844], [1440, 900]]) {
   ok(`hero ${w}: no errors`, pg.errs.length === 0, pg.errs[0] || ""); await pg.context().close();
 }
 
+// 2b homepage halal badge
+{ const pg = await mk(390, 844); await go(pg, "/"); await pg.waitForTimeout(2200);
+  const badge = pg.locator(".halal-badge"), shape = pg.locator("[data-halal-shape]");
+  ok("home halal badge: centered 100% Zabiha Halal copy", (await badge.getAttribute("aria-label")) === "100% Zabiha Halal" && /- 100% -\s+Zabiha\s+Halal/.test(await badge.innerText()));
+  const paths = shape.locator("path"), pathCount = await paths.count();
+  const outer = pathCount > 0 ? await paths.nth(0).getAttribute("d") : "", inner = pathCount > 1 ? await paths.nth(1).getAttribute("d") : "";
+  ok("home halal badge: two octagram layers with eight rounded notches", pathCount === 2 && (outer.match(/Q/g) || []).length === 8 && (inner.match(/Q/g) || []).length === 8);
+  const start = await badge.boundingBox(), copyStart = await pg.locator(".halal-badge__copy").boundingBox(), rotationStart = await shape.evaluate((e) => getComputedStyle(e).transform);
+  ok("home halal badge: copy centered in octagram", Math.abs(start.x + start.width / 2 - copyStart.x - copyStart.width / 2) < 1 && Math.abs(start.y + start.height / 2 - copyStart.y - copyStart.height / 2) < 1);
+  await pg.evaluate(() => window.scrollTo(0, (document.documentElement.scrollHeight - innerHeight) / 2)); await pg.waitForTimeout(350);
+  const end = await badge.boundingBox(), rotationEnd = await shape.evaluate((e) => getComputedStyle(e).transform);
+  ok("home halal badge: fixed while octagram rotates and text stays still", Math.abs(start.x - end.x) < 1 && Math.abs(start.y - end.y) < 1 && rotationStart !== rotationEnd && await pg.locator(".halal-badge__copy").evaluate((e) => getComputedStyle(e).transform) === "none");
+  const shapeBeforeHover = await shape.boundingBox(), copyBeforeHover = await pg.locator(".halal-badge__copy").boundingBox();
+  await badge.hover(); await pg.waitForTimeout(250);
+  const shapeOnHover = await shape.boundingBox(), copyOnHover = await pg.locator(".halal-badge__copy").boundingBox();
+  ok("home halal badge: hover shows tooltip and scales only octagram", await pg.locator("#halal-badge-tip").isVisible() && (await pg.locator("#halal-badge-tip").innerText()).includes("serves 100% halal food") && shapeOnHover.width < shapeBeforeHover.width && Math.abs(copyOnHover.x - copyBeforeHover.x) < 1 && Math.abs(copyOnHover.y - copyBeforeHover.y) < 1);
+  await badge.focus(); await pg.waitForTimeout(250);
+  ok("home halal badge: keyboard focus shows tooltip", await pg.locator("#halal-badge-tip").isVisible());
+  await go(pg, "/menu/"); ok("home halal badge: absent from other pages", (await pg.locator(".halal-badge").count()) === 0);
+  await pg.context().close(); }
+
 // 3 cart + persistence
 { const pg = await mk(); await go(pg, "/item/naan-plain/");
   await pg.click("[data-dish-form] button[type=submit]"); await pg.waitForTimeout(300);

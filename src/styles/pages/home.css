@@ -10,3 +10,18 @@
 
 .sec--intro{padding-top:72px}.pts{display:grid;gap:18px}.pts li{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}.pts h3{margin:0 0 .15em;font-size:1.15rem}.pts p{margin:0;color:var(--mute)}.pts__i{display:grid;place-items:center;flex:none;width:48px;height:48px;border-radius:50%;background:var(--paper);color:var(--ember)}.pts__i .ico{width:24px;height:24px}
 .strip{display:grid;gap:10px;grid-template-columns:repeat(3,1fr)}@media(min-width:768px){.strip{grid-template-columns:repeat(6,1fr);gap:14px}}.strip .ph{border-radius:12px}
+
+.halal-badge{position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:40;display:grid;place-items:center;width:clamp(104px,11vw,132px);aspect-ratio:1}
+.halal-badge__shape-wrap{position:absolute;inset:0;transform-origin:center;transition:transform .2s var(--ease);will-change:transform}
+.halal-badge__shape{position:absolute;inset:0;width:100%;height:100%;overflow:visible;transform-origin:center;filter:drop-shadow(0 5px 12px rgba(15,46,36,.2));will-change:transform}
+.halal-badge__outer{fill:var(--forest)}
+.halal-badge__inner{fill:var(--forest2)}
+.halal-badge__copy{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font:700 clamp(.76rem,1.1vw,.9rem)/1.2 var(--serif);text-align:center}
+.halal-badge__percent{margin-bottom:4px;color:var(--gold);font:700 .62rem/1 var(--sans);letter-spacing:.08em}
+.halal-badge__tip{position:absolute;right:0;bottom:calc(100% + 6px);z-index:1;width:max-content;max-width:min(230px,calc(100vw - 24px));padding:10px 12px;border:1px solid var(--forest);border-radius:10px;background:var(--forest);color:#fff;box-shadow:0 10px 24px rgba(15,46,36,.2);font:500 .78rem/1.35 var(--sans);opacity:0;visibility:hidden;transform:translateY(4px);transition:opacity .18s,transform .18s,visibility .18s;pointer-events:none}
+.halal-badge__tip::after{position:absolute;top:100%;left:0;right:0;height:8px;content:""}
+.halal-badge:hover .halal-badge__shape-wrap,.halal-badge:focus .halal-badge__shape-wrap{transform:scale(.92)}
+.halal-badge:hover .halal-badge__tip,.halal-badge:focus .halal-badge__tip{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}
+.halal-badge:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:20px}
+@media(max-width:600px){.halal-badge{width:108px;right:max(10px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom))}}
+@media(max-width:1023px){body:has(.mbar:not([hidden])) .halal-badge{bottom:calc(76px + env(safe-area-inset-bottom))}}

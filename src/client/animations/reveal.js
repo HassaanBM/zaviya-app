@@ -5,6 +5,8 @@ import { split } from "./split.js";
 
 export function initReveals() {
   if (reduce) return;
+  const halalShape = $("[data-halal-shape]");
+  if (halalShape) gsap.to(halalShape, { rotation: 360, ease: "none", scrollTrigger: { start: 0, end: "max", scrub: true } });
   $$("[data-split]").forEach((el) => {
     if (el.closest(".hero")) return;
     const ws = split(el); gsap.set(ws, { yPercent: 115 });
